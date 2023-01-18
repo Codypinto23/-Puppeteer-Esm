@@ -10,10 +10,10 @@
     "clean": "rm -rf build && mkdir build",
     "build": "babel -d ./build ./src -s --copy-files",
     "startpm2": "yarn clean && yarn run build &&  pm2 start ecosystem.config.js   --env production",
-    "start": "yarn clean && yarn run build && NODE_ENV=production node -r esm ./build/server.js",
+    "startesm": "yarn clean && yarn run build && NODE_ENV=production node -r esm ./build/server.js",
     "starttest": "babel-node src/server.js",
-    "startesm": "yarn clean && yarn run build && NODE_ENV=production node --experimental-modules  ./build/server.js"
-  },
+    "startexperimental": "yarn clean && yarn run build && NODE_ENV=production node --experimental-modules  ./build/server.js"
+ },
   "dependencies": {
     "esm": "^3.2.25",
     "express": "^4.18.1",
