@@ -1,2 +1,2 @@
-# -Puppeteer-Esm
+# Puppeteer-Esm
  puppeteer esm example
